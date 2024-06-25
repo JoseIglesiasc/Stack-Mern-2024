@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista y funciones de búsqueda</title>
+    <script>
+        function buscar() {
+            var input = document.getElementById("busqueda");
+            var filter = input.value.toUpperCase();
+            var ul = document.getElementById("lista");
+            var li = ul.getElementsByTagName("li");
+
+            for (var i = 0; i < li.length; i++) {
+                var a = li[i].getElementsByTagName("a")[0];
+                var textValue = a.textContent || a.innerText;
+
+                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Lista y funciones de búsqueda</h1>
+
+    <input type="text" id="busqueda" onkeyup="buscar()" placeholder="Buscar en la lista">
+
+    <ul id="lista">
+        <li><a href="#">Elemento 1</a></li>
+        <li><a href="#">Elemento 2</a></li>
+        <li><a href="#">Elemento 3</a></li>
+        <li><a href="#">Elemento 4</a></li>
+        <li><a href="#">Elemento 5</a></li>
+    </ul>
+</body>
+</html>
