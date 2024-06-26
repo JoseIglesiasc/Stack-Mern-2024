@@ -1,0 +1,41 @@
+.tarjeta-producto {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .tarjeta-producto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-producto p {
+    margin: 10px 0;
+  }
+  
+  .tarjeta-producto .precio {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .tarjeta-producto .descripcion {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .tarjeta-producto .en-stock {
+    font-size: 1rem;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .tarjeta-producto .agotado {
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+  }
+  
