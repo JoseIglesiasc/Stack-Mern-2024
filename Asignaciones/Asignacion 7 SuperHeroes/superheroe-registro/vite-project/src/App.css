@@ -1,0 +1,101 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  position: absolute;
+  background-image: url(../src/img/wallpaperflare.com_wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  width: 600px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0088cc;
+}
+
+p {
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+root{
+  position: absolute;
+}
+
+
